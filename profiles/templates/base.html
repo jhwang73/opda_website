@@ -1,7 +1,10 @@
 # Replace the page-specific stuff with blocks
 # navbar is good to go, footer is good to go
 # Need to figure out head, as it's different from head of
-# item_home.html, but might be the same file inthe end, idk
+# item_home.html, but might be the same file inthe end
+# just checked ^, and the css for the homepage one should be fine,
+# it contains all the elements of the css for the item one.
+# BTW, this file is still mostly the homepage stuff
 
 {% load staticfiles %}
 
@@ -38,6 +41,9 @@
 
 
     {% include 'navbar.html' %}
+
+    {% block content %}
+    {% endblock %}
 
     <!-- Page Content -->
     <div class="container">
