@@ -23,6 +23,7 @@ from profiles import views as profile_views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', profile_views.home, name='home'),
+    url(r'^about/$', profile_views.about, name='about'),
 ]
 
 if settings.DEBUG:
