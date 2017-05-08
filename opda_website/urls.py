@@ -19,11 +19,13 @@ from django.conf.urls import url
 from django.contrib import admin
 
 from profiles import views as profile_views
+from contact import views as contact_views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', profile_views.home, name='home'),
     url(r'^about/$', profile_views.about, name='about'),
+    url(r'^contact/$', contact_views.contact, name='contact'),
 ]
 
 if settings.DEBUG:
