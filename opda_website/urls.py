@@ -25,6 +25,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', profile_views.home, name='home'),
     url(r'^about/$', profile_views.about, name='about'),
+    url(r'^item_home/$', profile_views.item_home, name='item_home'),
     url(r'^contact/$', contact_views.contact, name='contact'),
 ]
 
