@@ -26,7 +26,7 @@ urlpatterns = [
     url(r'^$', profile_views.home, name='home'),
     url(r'^shop/$', profile_views.shop, name='shop'),
     url(r'^about/$', profile_views.about, name='about'),
-    url(r'^item_home/$', profile_views.item_home, name='item_home'),
+    url(r'^item_1/$', profile_views.item_1, name='item_1'),
     url(r'^contact/$', contact_views.contact, name='contact'),
 ]
 
