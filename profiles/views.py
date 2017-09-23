@@ -6,6 +6,11 @@ def home(request):
     template = 'home.html'
     return render(request,template,context)
 
+def shop(request):
+    context = {}
+    template = 'shop.html'
+    return render(request,template,context)
+
 def about(request):
     context = {}
     template = 'about.html'
