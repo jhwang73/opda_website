@@ -16,7 +16,7 @@ def about(request):
     template = 'about.html'
     return render(request,template,context)
 
-def item_home(request):
+def item_1(request):
     context = {}
-    template = 'item_home.html'
+    template = 'item_1.html'
     return render(request,template,context)
